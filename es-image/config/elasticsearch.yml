@@ -1,0 +1,20 @@
+cluster.name: ${CLUSTER_NAME}
+
+node.name: ${NODE_NAME}
+node.master: ${NODE_MASTER}
+node.data: ${NODE_DATA}
+
+transport.tcp.port: ${TRANSPORT_PORT}
+http.port: ${HTTP_PORT}
+http.enabled: ${HTTP_ENABLE}
+http.compression: true
+http.cors.enabled: ${HTTP_CORS_ENABLE}
+http.cors.allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
+
+bootstrap.memory_lock: ${MEMORY_LOCK}
+path.data: /data
+
+network.host: 0.0.0.0
+
+discovery.zen.minimum_master_nodes: ${MINIMUM_MASTER_NODES}
+discovery.zen.ping.unicast.hosts: ${DISCOVERY_SERVICE}
